@@ -19,7 +19,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -29,30 +29,45 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
+
 nav ul li {
-  margin: 0 10px;
+  margin: 0 5px;
+  flex-shrink: 1;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 8spx 12px;
   display: inline-block;
   transition: background 0.3s;
-  font-size: 1rem;
+  font-size: 0.85rem;
   white-space: nowrap;
 }
+
 nav ul li a:hover {
   background: #555;
   border-radius: 5px;
 }
+
 @media (max-width: 500px) {
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin: 0 4px;
+  }
+
   nav ul li a {
-    font-size: 0.85rem;
-    padding: 8px 10px;
+    font-size: 0.58rem;
+    padding: 6px 8px;
   }
 }
+
 section {
   padding: 80px 20px 20px;
   text-align: center;
