@@ -57,6 +57,9 @@ section {
   padding: 80px 20px 20px;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .proyecto {
   background: white;
   margin: 10px auto;
