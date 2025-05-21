@@ -65,8 +65,22 @@ header {
     text-align: center;
     margin: 10px 0;
   }
-}
 
+    nav ul {
+    display: none;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+}
+/*
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+  }
+}
+*/
 nav {
   background: #121212;
   padding: 15px 0;
@@ -87,6 +101,7 @@ nav ul {
   align-items: center;
   flex-wrap: nowrap;
   white-space: nowrap;
+
 }
 
 nav ul li {
@@ -97,11 +112,12 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 8spx 12px;
+  padding: 8px 12px;
   display: inline-block;
   transition: background 0.3s;
-  font-size: 0.85rem;
+  font-size: 14px;
   white-space: nowrap;
+  margin-right: 15px;
 }
 
 nav ul li a:hover {
